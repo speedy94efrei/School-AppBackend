@@ -31,7 +31,6 @@ jobs:
           echo "SUPABASE_URL=${{ secrets.SUPABASE_URL }}" >> .env.test
           echo "SUPABASE_KEY=${{ secrets.SUPABASE_KEY }}" >> .env.test
           echo "PORT=${{ secrets.PORT }}" >> .env.test
-
       - name: Run Jest tests
         run: npm test
 
