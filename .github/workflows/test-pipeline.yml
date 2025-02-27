@@ -41,3 +41,4 @@ jobs:
         with:
           name: test-results
           path: coverage/
+          if-no-files-found: ignore  # Ne pas arrêter le workflow si aucun fichier coverage n'existe
