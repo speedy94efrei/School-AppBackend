@@ -20,7 +20,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 22
+          node-version: 18
           cache: 'npm'
 
       - name: Install dependencies
@@ -36,9 +36,8 @@ jobs:
         run: npm test
 
       - name: Upload test results
-  if: always()
-  uses: actions/upload-artifact@v4
-  with:
-    name: test-results
-    path: coverage/
-
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: test-results
+          path: coverage/
