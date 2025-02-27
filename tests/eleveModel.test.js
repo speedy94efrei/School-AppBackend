@@ -1,5 +1,5 @@
 
-const { getEleveById, getNotesByEleve, getDevoirsByEleve } = require("../Models/eleveModel");
+const { getEleveById, getNotesByEleve } = require("../Models/eleveModel");
 
 test("Récupération d'un élève existant", async () => {
     const idEleve = 1; 
